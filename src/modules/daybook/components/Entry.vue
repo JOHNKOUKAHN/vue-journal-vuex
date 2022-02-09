@@ -1,0 +1,40 @@
+<template>
+  <div
+    class="entry-container mb-3 pointer p-2"
+    @click="$router.push({name: 'entry', params: { id:10 }} )"
+  >
+
+    <div class="entry-tittle d-flex">
+        <span class="text-success fs-5 fw-bold"> 19 </span>
+        <span class="mx-1 fs-5"> Enero </span>
+        <span class="mx-2 fw-light"> 2022 </span>
+    </div>
+
+    <div class="entry-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum provident soluta in mollitia atque sit laudantium! Amet provident iure cum non illum asperiores ab dolores hic, sint quos veniam quae.
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss" scoped>
+    .entry-container {
+        border-bottom: 1px solid #2c3c50;
+        transition: 0.2s all ease-in;
+
+        &:hover{
+            background-color: lighten($color: gray, $amount: 45);
+        }
+
+        .entry-description{
+            font-size: 12px;
+        }
+    }
+
+
+</style>
